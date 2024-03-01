@@ -127,8 +127,10 @@
                 const numberToTest = document.getElementById("textToCipher");
                 let plainText = numberToTest.value;
                 const response = await fetch(
-                    "http://ciphers-service-sierranapieralski.onrender.com/ciphers/caesar/" +
-                        plainText
+                    "https://ciphers-service-sierranapieralski.onrender.com/ciphers/caesar/" +
+                        plainText +
+                        "/" +
+                        "3"
                 );
                 const result = await response.json();
                 document.getElementById("resultCipher").textContent =
