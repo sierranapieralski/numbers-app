@@ -68,7 +68,7 @@
                     "https://artihmetic-service.onrender.com/add/" + n + "/" + m
                 );
                 const sum = await response.json();
-                document.getElementById("result").textContent =
+                document.getElementById("result").innerText =
                     "Sum: " + sum.result;
                 console.log(sum.result);
             }
